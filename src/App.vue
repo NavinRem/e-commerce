@@ -1,15 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-
-  This is my first VueJS project.
-
-
   <RouterView />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
