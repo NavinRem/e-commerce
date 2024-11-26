@@ -1,35 +1,53 @@
+<script setup>
+defineProps({
+  category: {
+    type: Object,
+  },
+  imgUrl: {
+    type: String,
+    Required: true,
+  },
+  title: {
+    type: String,
+    Required: true,
+  },
+  quantity: {
+    type: Number,
+    Required: true,
+  },
+});
+</script>
+
 <script>
+import cate_data from "../stores/categories.json";
+
 export default {
-  name: "category_component",
-  props: {
-    image: {
-      type: String,
-    },
-    title: {
-      type: String,
-    },
-    quantity: {
-      type: Number,
-    },
+  data() {
+    return {
+      categories: cate_data,
+    };
   },
 };
 </script>
 
 <template>
-  <article class="each_category">
-    <img :src="image" alt="image" />
-
+  <div
+    v-for="cate in categories"
+    class="each_category"
+    :style="{ 'background-color': cate.bg_color }"
+  >
+    <img :src="cate.img" width="100px" />
     <h4 class="title_product">
-      {{ title }}
+      {{ cate.title }}
     </h4>
-    <span>{{ quantity }} Items</span>
-  </article>
+    <span>{{ cate.quantity }} Items</span>
+  </div>
 </template>
 
 <style>
 .each_category {
   width: 8.25rem;
-  height: 10rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,8 +55,8 @@ export default {
   margin-bottom: 1rem;
   border-radius: 0.45rem;
   gap: 0.05rem;
-  background-color: lightgreen;
   box-shadow: 5px 5px 5px rgba(222, 222, 222, 0.1);
+  color: black;
   border: none;
 }
 

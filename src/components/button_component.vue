@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: "button_component",
-};
-</script>
-
 <template>
   <button class="Btn">
     Shop Now
@@ -52,6 +46,9 @@ export default {
 }
 .Btn:hover {
   background-color: #fdc040;
+}
+.Btn:active {
+  transform: translateY(5px);
 }
 
 .Btn svg {

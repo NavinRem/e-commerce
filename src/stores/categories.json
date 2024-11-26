@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "img": "src\\assets\\images\\burger.png",
+    "title": "Burger",
+    "quantity": 14,
+    "bg_color": "#F2FCE4"
+  },
+  {
+    "id": 2,
+    "img": "src\\assets\\images\\peach.png",
+    "title": "Peach",
+    "quantity": 17,
+    "bg_color": "#FEFBE8"
+  },
+  {
+    "id": 3,
+    "img": "src\\assets\\images\\kiwi.png",
+    "title": "Organic kiwi",
+    "quantity": 21,
+    "bg_color": "#EEFFEC"
+  },
+  {
+    "id": 4,
+    "img": "src\\assets\\images\\apple.png",
+    "title": "Red apple",
+    "quantity": 68,
+    "bg_color": "#FFF0E9"
+  },
+  {
+    "id": 5,
+    "img": "src\\assets\\images\\snack.png",
+    "title": "Snack",
+    "quantity": 34,
+    "bg_color": "#FEF4EB"
+  },
+  {
+    "id": 6,
+    "img": "src\\assets\\images\\black_plum.png",
+    "title": "Black plum",
+    "quantity": 25,
+    "bg_color": "#FFF4FF"
+  },
+  {
+    "id": 7,
+    "img": "src\\assets\\images\\cabbage.png",
+    "title": "Vegetable",
+    "quantity": 65,
+    "bg_color": "#F2FCE4"
+  },
+  {
+    "id": 8,
+    "img": "src\\assets\\images\\headphone.png",
+    "title": "Headphone",
+    "quantity": 33,
+    "bg_color": "#FEFBEA"
+  },
+  {
+    "id": 9,
+    "img": "src\\assets\\images\\cake_milk.png",
+    "title": "Cake & milk",
+    "quantity": 54,
+    "bg_color": "#F2FCE4"
+  },
+  {
+    "id": 10,
+    "img": "src\\assets\\images\\orange.png",
+    "title": "Orange",
+    "quantity": 63,
+    "bg_color": "#FFF4FF"
+  }
+]

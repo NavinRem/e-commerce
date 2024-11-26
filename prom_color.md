@@ -1,0 +1,20 @@
+[
+{
+"bg_color": "gold",
+// "bg_color": "#F0E9D7",
+"content": "Everyday Fresh & Clean with our products",
+"img": "src\\assets\\images\\onion.jpg"
+},
+{
+"bg_color": "deeppink",
+// "bg_color": "#F2E8E9",
+"content": "Make your breakfast healthy and easy",
+"img": "src\\assets\\images\\strawberry_juice.png"
+},
+{
+"bg_color": "yellow",
+// "bg_color": "#E6EAF3",
+"content": "The best organic products online",
+"img": "src\\assets\\images\\vegetable.jpg"
+}
+]

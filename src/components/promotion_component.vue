@@ -1,11 +1,26 @@
+<template>
+  <div
+    v-for="prom in promotions"
+    class="each_promotion nunito"
+    :style="{ backgroundColor: prom.bg_color }"
+  >
+    <div class="content">
+      <h3>{{ prom.content }}</h3>
+      <Button_Component />
+    </div>
+    <img :src="prom.img" alt="Image" />
+  </div>
+</template>
+
 <script>
 import Button_Component from "./button_component.vue";
+import prom_data from "../stores/promotions.json";
 
 export default {
-  name: "promotion_component",
-  props: {
-    content: String,
-    Image: String,
+  data() {
+    return {
+      promotions: prom_data,
+    };
   },
   components: {
     Button_Component,
@@ -13,38 +28,31 @@ export default {
 };
 </script>
 
-<template>
-  <article class="each_promotion">
-    <div class="content">
-      <h3>{{ content }}</h3>
-      <Button_Component />
-    </div>
-    <img :src="Image" alt="d" />
-  </article>
-</template>
-
-<style>
+<style scoped>
 .each_promotion {
-  background-color: lightskyblue;
-  display: flex;
-  width: 27rem;
   position: relative;
-  height: 14rem;
-  align-items: center;
-  padding-left: 2rem;
-  border-radius: 0.25rem;
+  color: black;
+  display: flex;
+  justify-content: end;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  border-radius: 10px;
 }
-.each_promotion img {
-  width: 22rem;
-  height: 100%;
-  position: absolute;
-  right: 0;
-}
+
 .content {
-  z-index: 1;
+  width: 250px;
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  line-height: 30px;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 50%;
+  justify-content: space-evenly;
+  height: 150px;
+}
+.each_promotion img {
+  border-radius: 10px;
 }
 </style>
