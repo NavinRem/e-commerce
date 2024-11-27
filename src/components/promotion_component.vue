@@ -6,7 +6,7 @@
   >
     <div class="content">
       <h3>{{ prom.content }}</h3>
-      <Button_Component />
+      <Button_Component :prom_content="prom.content" />
     </div>
     <img :src="prom.img" alt="Image" />
   </div>

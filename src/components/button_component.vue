@@ -1,5 +1,5 @@
 <template>
-  <button class="Btn">
+  <button class="Btn" @click="shopNow(prom_content)">
     Shop Now
     <svg
       width="11"
@@ -27,6 +27,30 @@
     </svg>
   </button>
 </template>
+
+<script>
+// import promotion_content from "../stores/promotions.json";
+export default {
+  props: {
+    prom_content: {
+      type: String,
+      required: true,
+    },
+  },
+  // data() {
+  //   return {
+  //     prom_content: promotion_content.content,
+  //   };
+  // },
+  methods: {
+    shopNow(prom_cont) {
+      // let curr_con = this.prom_content.content;
+      alert("Let's shop: " + prom_cont);
+      console.log(prom_cont);
+    },
+  },
+};
+</script>
 
 <style>
 .Btn {
